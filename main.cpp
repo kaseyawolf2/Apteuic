@@ -18,6 +18,7 @@ int MainInit(){
             PostLogs(GameCells[i]);
             return 1;
         }
+        
     }
 
     return 0;

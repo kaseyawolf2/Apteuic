@@ -1,4 +1,5 @@
 #include "Cell.h"
+#include "defines.h"
 
 struct Cell;
 struct Ter;
@@ -29,4 +30,9 @@ bool CheckCell(Cell &cell) {
     if(cell.Humidity != 0.0f){return false;}
     if(cell.Pressure != 0.0f){return false;}
     return true;
+}
+int Get_CellPostition(int x,int y){
+    int o = y * NumCellsY;
+    o = o + x;
+    return o;
 }
