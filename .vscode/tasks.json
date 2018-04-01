@@ -7,6 +7,7 @@
             "label": "Build",
             "type": "shell",
             "windows": {
+                "command": "${workspaceRoot}/Scripts/Build.bat"
             },
             "linux": {                
                 "command": "${workspaceRoot}/Scripts/Build.sh"
