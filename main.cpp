@@ -12,7 +12,6 @@ Cell GameCells[TolCells];
 
 int MainInit(){
     Console::Log("Starting Init");
-    GameCells[3].X=6;
     for(int i = 0;i < TolCells;i++){
         if(!CheckCell(GameCells[i])){
             std::cout << "Problem with Cell: " << i << std::endl;
@@ -23,6 +22,7 @@ int MainInit(){
 
     return 0;
 }
+
 int main() {
     if (MainInit() != 0){
         Console::Log("Failed to Init");
