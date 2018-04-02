@@ -9,6 +9,7 @@ struct Ter {
 struct Cell {
     int X;
     int Y;
+    int Z;
     float WindSpeed;
     float WindDirection;
     float Temp;
@@ -16,7 +17,7 @@ struct Cell {
     float Pressure;
     Ter Terrain;    
 };
-int Get_CellPostition(int x,int y);
+int Get_CellPostition(int x,int y,int z);
 Cell Get_AdjCell(Cell OrginalCell, std::string Dir);
 void PostLogs(Cell cell);
 void InitCell(Cell &cell);

@@ -4,6 +4,7 @@ echo "$PWD"
 
 g++ -c -o Main ./../../main.cpp
 g++ -c -o Cell ./../../Cell.cpp
+g++ -c -o Console ./../../Console.cpp
 
 echo "Objects Built"
 
