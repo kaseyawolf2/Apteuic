@@ -14,7 +14,7 @@ int MainInit(){
             return 1;
         }
         GameCells[i].X = i % NumCellsX;
-        GameCells[i].Y = i % NumCellsY;
+        GameCells[i].Y = i % (NumCellsY;
         GameCells[i].Z = i % NumCellsZ;
     }
 
