@@ -7,11 +7,13 @@ struct Ter;
 void PostLogs(Cell cell){
     std::cout << "X:" << cell.X << std::endl;
     std::cout << "Y:" << cell.Y << std::endl;
+    std::cout << "Z:" << cell.Z << std::endl;
     std::cout << "Wind Direction:" << cell.WindDirection << std::endl;
     std::cout << "Wind Speed:" << cell.WindSpeed << std::endl;
     std::cout << "Temp:" << cell.Temp << std::endl;
     std::cout << "Humidity:" << cell.Humidity << std::endl;
     std::cout << "Pressure:" << cell.Pressure << std::endl;
+    Console::Log("");
 }
 bool CheckCell(Cell &cell) {
     if(cell.X != 0){return false;}

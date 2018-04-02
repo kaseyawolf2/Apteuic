@@ -1,10 +1,18 @@
 #pragma once
 #include<iostream>
 
+
+struct Mat { 
+
+};
+
 struct Ter {
     int Ter_ID;
     float Fertility;
+    Mat Material;
+
 };
+
 
 struct Cell {
     int X;
