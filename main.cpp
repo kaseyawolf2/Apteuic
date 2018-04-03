@@ -7,15 +7,39 @@ Cell GameCells[NumCellsTol];
 
 int MainInit(){
     Console::Log("Starting Init");
+    int x = 0;
+    int y = 0;
+    int z = 0;
     for(int i = 0;i < NumCellsTol;i++){
         if(!CheckCell(GameCells[i])){
             std::cout << "Problem with Cell: " << i << std::endl;
             PostLogs(GameCells[i]);
             return 1;
         }
-        GameCells[i].X = i % NumCellsX;
-        GameCells[i].Y = i % (NumCellsY;
-        GameCells[i].Z = i % NumCellsZ;
+
+        GameCells[i].X = x;
+        GameCells[i].Y = y;
+        GameCells[i].Z = z;
+        if (x < (NumCellsX - 1))
+        {
+            x++;
+        }
+        else if (x == (NumCellsX - 1) && y < (NumCellsY - 1))
+        {
+            x = 0;
+            y++;
+        }
+        else if (x == (NumCellsX - 1) && y == (NumCellsY - 1))
+        {
+            x = 0;
+            y = 0;
+            z++;
+        }
+        if (x > NumCellsX || y > NumCellsY || z > NumCellsZ)
+        {
+            Console::Log("Position out of bound");
+        }
+        PostLogs(GameCells[i]);
     }
 
     return 0;
@@ -27,11 +51,7 @@ int main() {
         Console::Log("Failed to Init");
     }
     GameCells[0].Pressure = 5;
-    PressureBal();
-    PostLogs(GameCells[0]);
-    PostLogs(GameCells[1]);
-    PostLogs(GameCells[2]);
-    PostLogs(GameCells[3]);
+    //PressureBal();
     
 
 
