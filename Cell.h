@@ -2,15 +2,15 @@
 #include<iostream>
 
 
-struct Mat { 
+struct Mat {
+    int id;
 
 };
 
 struct Ter {
     int Ter_ID;
     float Fertility;
-    Mat Material;
-
+    Mat Material[];
 };
 
 

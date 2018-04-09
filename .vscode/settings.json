@@ -25,6 +25,7 @@
         "hash_map": "cpp",
         "cmath": "cpp",
         "tuple": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "fstream": "cpp"
     }
 }

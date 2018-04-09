@@ -28,7 +28,7 @@ bool CheckCell(Cell &cell) {
 int Get_CellPostition(int x,int y,int z){
     //invaild checking
     if(x > NumCellsX || x < 0 || y > NumCellsY || y < 0 || z > NumCellsZ || z < 0 ){
-        Console::Log("Invaild Cell");
+        //Console::Log("Invaild Cell");
         return -1;
     }
     
