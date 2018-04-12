@@ -1,5 +1,4 @@
 #include "Cell.h"
-struct Ter;
 struct Cell;
 void PostLogs(Cell cell){
     std::cout << "X:" << cell.X << std::endl;

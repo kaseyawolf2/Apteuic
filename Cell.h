@@ -4,12 +4,6 @@
 #include <iostream>
 #include <vector>
 
-
-struct Ter {
-    std::string Name;
-    float Fertility;
-    int Hardness;
-};
 struct Room {
     std::vector<int> ListCellsPos;
 };
@@ -22,7 +16,7 @@ struct Cell {
     float WindDirection;
     float Temp;
     float Humidity;
-    float Pressure; 
+    float Pressure;
 };
 
 int Get_CellPostition(int x,int y,int z);
