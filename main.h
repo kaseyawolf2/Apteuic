@@ -8,10 +8,9 @@
 
 
 
-int MainInit();
+int NewInit();
 void PressureBal();
 void Tick();
-
 
 //Globals
 std::vector<Cell> GameCells;

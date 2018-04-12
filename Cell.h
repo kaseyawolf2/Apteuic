@@ -1,5 +1,4 @@
 #pragma once
-#include "Cell.h"
 #include "defines.h"
 #include "Console.h"
 #include <iostream>
@@ -13,7 +12,7 @@ struct Ter {
     std::string PhaseState;
 };
 struct Room {
-    std::vector<int> CellPos;
+    std::vector<int> ListCellsPos;
 };
 
 struct Cell {
@@ -32,4 +31,4 @@ Cell Get_AdjCell(Cell OrginalCell, std::string Dir);
 void PostLogs(Cell cell);
 void InitCell(Cell &cell);
 bool CheckCell(Cell &cell);
-void BalPressure();
+void BalPressure(Room RoomToBal, std::vector<Cell> GameCells);

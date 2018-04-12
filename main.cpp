@@ -1,18 +1,25 @@
 #include "main.h"
 
 int main() {
-    if (MainInit() != 0){
+
+    if (NewInit() != 0){
         Console::Log("Failed to Init");
     }
 
-
+    GameCells = LoadCellFile();
+    PostLogs(GameCells[999]);
+    
+    //SaveCellFile(GameCells);
     return 0;
+
+
+
 }
 
 
 
 
-int MainInit(){
+int NewInit(){
     Console::Log("Starting Init");
     #pragma region AssignXYZ
     int x = 0;
