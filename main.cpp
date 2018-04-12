@@ -6,14 +6,12 @@ int main() {
         Console::Log("Failed to Init");
     }
 
-    GameCells = LoadCellFile();
-    PostLogs(GameCells[999]);
-    
-    //SaveCellFile(GameCells);
+    //GameCells = LoadCellFile();
+    //PostLogs(GameCells[999]);
+
+
+    SaveCellFile(GameCells, "Test");
     return 0;
-
-
-
 }
 
 

@@ -4,5 +4,5 @@
 #include "Console.h"
 #include "Cell.h"
 
-std::vector<Cell> LoadCellFile();
-void SaveCellFile(std::vector<Cell> GameCells);
+std::vector<Cell> LoadCellFile(std::string SaveName);
+void SaveCellFile(std::vector<Cell> GameCells, std::string SaveName);

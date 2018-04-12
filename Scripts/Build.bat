@@ -1,9 +1,12 @@
 cd ./Build/Objects
 
-g++ -c -o Main ./../../main.cpp
-g++ -c -o Cell ./../../Cell.cpp
-g++ -c -o Console ./../../Console.cpp
+g++ -c -o Main      ./../../main.cpp
+g++ -c -o Cell      ./../../Cell.cpp
+g++ -c -o Console   ./../../Console.cpp
+g++ -c -o File      ./../../File.cpp
 
 cd ./../
+
 g++ -o Build ./Objects/*
-Build.exe
+
+.\Build.exe

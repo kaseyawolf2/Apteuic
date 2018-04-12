@@ -9,7 +9,6 @@ struct Ter {
     std::string Name;
     float Fertility;
     int Hardness;
-    std::string PhaseState;
 };
 struct Room {
     std::vector<int> ListCellsPos;
