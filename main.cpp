@@ -10,6 +10,7 @@ int main() {
     //PostLogs(GameCells[999]);
 
 
+
     SaveCellFile(GameCells, "Test");
     return 0;
 }
@@ -17,7 +18,7 @@ int main() {
 
 
 
-int NewInit(){
+int NewInit() {
     Console::Log("Starting Init");
     #pragma region AssignXYZ
     int x = 0;
