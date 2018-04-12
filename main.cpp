@@ -4,7 +4,7 @@ int main() {
     if (MainInit() != 0){
         Console::Log("Failed to Init");
     }
-    
+
 
     return 0;
 }
@@ -14,19 +14,21 @@ int main() {
 
 int MainInit(){
     Console::Log("Starting Init");
+    #pragma region AssignXYZ
     int x = 0;
     int y = 0;
     int z = 0;
     for(int i = 0;i < NumCellsTol;i++){
-        if(!CheckCell(GameCells[i])){
-            std::cout << "Problem with Cell: " << i << std::endl;
-            PostLogs(GameCells[i]);
-            return 1;
-        }
+        Cell Temp;
+        Temp.X = x;
+        Temp.Y = y;
+        Temp.Z = z;
+        Temp.Humidity = 0;
+        Temp.Pressure = 0;
+        Temp.Temp = 0;
+        Temp.WindDirection = 0;
+        Temp.WindSpeed = 0;
 
-        GameCells[i].X = x;
-        GameCells[i].Y = y;
-        GameCells[i].Z = z;
         if (x < (NumCellsX - 1))
         {
             x++;
@@ -46,7 +48,17 @@ int MainInit(){
         {
             Console::Log("Position out of bound");
         }
+        
+
+
+
+        GameCells.push_back(Temp);
     }
+    #pragma endregion
+    
+
+
+
 
     return 0;
 }

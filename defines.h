@@ -1,12 +1,5 @@
 #pragma once
-#define NumCellsX 5
-#define NumCellsY 5
-#define NumCellsZ 2
+#define NumCellsX 10
+#define NumCellsY 10
+#define NumCellsZ 10
 #define NumCellsTol NumCellsX * NumCellsY * NumCellsZ
-
-
-//Tick Defines
-#define PressureTick 5;
-
-//Mat Defines
-#define NumGas 1

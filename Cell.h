@@ -1,18 +1,20 @@
 #pragma once
-#include<iostream>
+#include "Cell.h"
+#include "defines.h"
+#include "Console.h"
+#include <iostream>
+#include <vector>
 
-
-struct Mat {
-    int id;
-
-};
 
 struct Ter {
-    int Ter_ID;
+    std::string Name;
     float Fertility;
-    Mat Material[];
+    int Hardness;
+    std::string PhaseState;
 };
-
+struct Room {
+    std::vector<int> CellPos;
+};
 
 struct Cell {
     int X;
@@ -22,11 +24,12 @@ struct Cell {
     float WindDirection;
     float Temp;
     float Humidity;
-    float Pressure;
-    Ter Terrain;    
+    float Pressure; 
 };
+
 int Get_CellPostition(int x,int y,int z);
 Cell Get_AdjCell(Cell OrginalCell, std::string Dir);
 void PostLogs(Cell cell);
 void InitCell(Cell &cell);
 bool CheckCell(Cell &cell);
+void BalPressure();

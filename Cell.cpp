@@ -1,9 +1,6 @@
 #include "Cell.h"
-#include "defines.h"
-#include "Console.h"
-
-struct Cell;
 struct Ter;
+struct Cell;
 void PostLogs(Cell cell){
     std::cout << "X:" << cell.X << std::endl;
     std::cout << "Y:" << cell.Y << std::endl;
@@ -27,8 +24,8 @@ bool CheckCell(Cell &cell) {
 }
 int Get_CellPostition(int x,int y,int z){
     //invaild checking
-    if(x > NumCellsX || x < 0 || y > NumCellsY || y < 0 || z > NumCellsZ || z < 0 ){
-        //Console::Log("Invaild Cell");
+    if(x >= NumCellsX || x < 0 || y >= NumCellsY || y < 0 || z >= NumCellsZ || z < 0 ){
+        Console::Log("Invaild Cell");
         return -1;
     }
     

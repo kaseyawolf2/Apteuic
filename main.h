@@ -1,8 +1,11 @@
+#pragma once
 #include "defines.h"
 #include "Cell.h"
 #include "Console.h"
-#include "Save.h"
+#include "File.h"
 #include <iostream>
+#include <vector>
+
 
 
 int MainInit();
@@ -11,4 +14,4 @@ void Tick();
 
 
 //Globals
-Cell GameCells[NumCellsTol];
+std::vector<Cell> GameCells;

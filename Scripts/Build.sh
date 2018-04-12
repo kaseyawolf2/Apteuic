@@ -2,10 +2,10 @@ cd ./Build/Objects
 echo "Starting Build"
 echo "$PWD" 
 
-g++ -c -o Main ./../../main.cpp
-g++ -c -o Cell ./../../Cell.cpp
-g++ -c -o Console ./../../Console.cpp
-g++ -c -o Save ./../../Save.cpp
+g++ -c -o Main      ./../../main.cpp
+g++ -c -o Cell      ./../../Cell.cpp
+g++ -c -o Console   ./../../Console.cpp
+g++ -c -o File      ./../../File.cpp
 
 echo "Objects Built"
 
