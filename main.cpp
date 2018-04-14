@@ -1,17 +1,35 @@
 #include "main.h"
 
-int main() {
+int main(int argc, char* args[]) {
 
-    if (NewInit() != 0){
-        Console::Log("Failed to Init");
+bool NewGame = false;
+
+    if(NewGame){
+        if (NewInit() != 0){
+            Console::Log("Failed to Init");
+        }
     }
 
-    //GameCells = LoadCellFile();
-    //PostLogs(GameCells[999]);
+    //Start SDL
+    SDL_Init( SDL_INIT_EVERYTHING );
+    
 
 
 
-    SaveCellFile(GameCells, "Test");
+
+
+
+
+
+
+
+
+
+
+
+    
+    //Quit SDL
+    SDL_Quit();
     return 0;
 }
 
@@ -62,9 +80,5 @@ int NewInit() {
     }
     #pragma endregion
     
-
-
-
-
     return 0;
 }

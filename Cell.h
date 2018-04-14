@@ -24,4 +24,4 @@ Cell Get_AdjCell(Cell OrginalCell, std::string Dir);
 void PostLogs(Cell cell);
 void InitCell(Cell &cell);
 bool CheckCell(Cell &cell);
-void BalPressure(Room RoomToBal, std::vector<Cell> GameCells);
+void BalRoomPressure(Room RoomToBal, std::vector<Cell> GameCells);

@@ -34,7 +34,7 @@ int Get_CellPostition(int x,int y,int z){
     o = o + (z*(NumCellsX*NumCellsY));
     return o;
 }
-void BalPressure(Room RoomToBal, std::vector<Cell> GameCells){
+void BalRoomPressure(Room RoomToBal, std::vector<Cell> GameCells){
     float ave = 0;
     for (unsigned int i = 0; i < RoomToBal.ListCellsPos.size(); i++)
     {
