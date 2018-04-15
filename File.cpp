@@ -1,6 +1,5 @@
 // basic file operations
 #include "File.h"
-#include <vector>
 using namespace std;
 
 vector<Cell> LoadCellFile(std::string SaveName) {
@@ -11,7 +10,7 @@ vector<Cell> LoadCellFile(std::string SaveName) {
     Open += SaveName;
     Open += "/Cells.txt";
 
-    inFile.open(Open);
+    inFile.open(Open.c_str());
 
     if (!inFile) {
         cerr << "Unable to open file : Cells.txt";
@@ -51,7 +50,7 @@ void SaveCellFile(vector<Cell> GameCells, std::string SaveName) {
     Open += SaveName;
     Open += "/Cells.txt";
     
-    OutFile.open(Open);
+    OutFile.open(Open.c_str());
 
     if (!OutFile) {
         cerr << "Unable to Save to file : Cells.txt";
