@@ -3,6 +3,7 @@
 int main(int argc, char* args[]) {
 
 bool NewGame = false;
+bool QuitProgram = false;
 
     if(NewGame){
         if (NewInit() != 0){
@@ -10,8 +11,16 @@ bool NewGame = false;
         }
     }
 
-    //Start SDL
-    SDL_Init( SDL_INIT_EVERYTHING );
+    Window window(500, 500);
+
+
+    SDL_Event E;
+    while(!QuitProgram){
+        while( SDL_PollEvent( &E )) {
+            if(E.type == SDL_QUIT ){
+                QuitProgram = true;
+            }
+        }
     
 
 
@@ -20,16 +29,11 @@ bool NewGame = false;
 
 
 
-
-
-
-
-
-
-
     
-    //Quit SDL
-    SDL_Quit();
+    
+    SDL_GL_SwapWindow(window.window);
+    }
+
     return 0;
 }
 

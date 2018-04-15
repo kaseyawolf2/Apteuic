@@ -2,10 +2,10 @@
 #include "defines.h"
 #include "Cell.h"
 #include "Console.h"
+#include "Window.h"
 #include "File.h"
 #include <iostream>
 #include <vector>
-#include <SDL2/SDL.h>
 
 
 
