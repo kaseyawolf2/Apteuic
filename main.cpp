@@ -21,17 +21,30 @@ bool QuitProgram = false;
                 QuitProgram = true;
             }
         }
+
+
+    // Set render color to red ( background will be rendered in this color )
+    SDL_SetRenderDrawColor( window.renderer, 255, 0, 0, 255 );
+
+    // Clear winow
+    SDL_RenderClear( window.renderer );
+
+    // Creat a rect at pos ( 50, 50 ) that's 50 pixels wide and 50 pixels high.
+   
+
+    // Set render color to blue ( rect will be rendered in this color )
+    SDL_SetRenderDrawColor( window.renderer, 0, 0, 255, 255 );
+
+    // Render rect
+    SDL_RenderFillRect( window.renderer, &r );
+
+    SDL_RenderPresent(window.renderer);
+
+
+
     
 
-
-
-
-
-
-
-    
-    
-    SDL_GL_SwapWindow(window.window);
+    //SDL_GL_SwapWindow(window.window);
     }
 
     return 0;
