@@ -1,0 +1,3 @@
+[submodule "Apteuic/vendor/spdlog"]
+	path = Apteuic/vendor/spdlog
+	url = https://github.com/gabime/spdlog
