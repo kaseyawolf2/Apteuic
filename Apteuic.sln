@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Apteuic", "Apteuic\Apteuic.vcxproj", "{892ADA86-A50A-4448-954B-BCC63FAD5F2B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{4344D969-E815-48E9-9539-D4E94678F552}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +17,10 @@ Global
 		{892ADA86-A50A-4448-954B-BCC63FAD5F2B}.Debug|x64.Build.0 = Debug|x64
 		{892ADA86-A50A-4448-954B-BCC63FAD5F2B}.Release|x64.ActiveCfg = Release|x64
 		{892ADA86-A50A-4448-954B-BCC63FAD5F2B}.Release|x64.Build.0 = Release|x64
+		{4344D969-E815-48E9-9539-D4E94678F552}.Debug|x64.ActiveCfg = Debug|x64
+		{4344D969-E815-48E9-9539-D4E94678F552}.Debug|x64.Build.0 = Debug|x64
+		{4344D969-E815-48E9-9539-D4E94678F552}.Release|x64.ActiveCfg = Release|x64
+		{4344D969-E815-48E9-9539-D4E94678F552}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
