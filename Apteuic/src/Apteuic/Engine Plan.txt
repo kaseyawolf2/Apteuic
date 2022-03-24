@@ -1,0 +1,78 @@
+Needs
+    Entry Point
+    Application Layer
+        Run loop
+        Events
+        Inputs
+    Window Layer
+        Inputs
+        Events
+    Render
+    Render API abstractions
+        For Directx vulcan opengl...
+    Debugging Support
+        Logger
+        Profiler
+    Scripting laguage
+    Memory Systems
+    Enitiy component System
+    Physics
+    File IO , Virtal file System
+    Build System
+    
+
+
+Overarching Wants
+    3D Graphics
+        XXX
+    Physics Engine
+        Voxel Based worlds
+    Sound
+        Ideally would like to have sound be actual waves
+    AI
+        Ai basics 
+    Importance 
+    If the Ai is not important then its cullable and not required to be saved when the player leaves the area, and can be regenerated if the player returns
+        To the World
+            The ai who are need to keep the world stable
+        To the Player
+            The ai that would break immersion if missing when the player returns
+    Networking
+        Since the game will be cpu heavy the plan is to have the player help with the processing. Obviously one can not trust the players, so each player is given a trust level that means that the longer that the player has gone without lying ( hacking/editing the returned values) the less duplicate servers need to be used to verify there results 
+        Can connect headless servers as verified servers whose outputs are trusted without verification or used as lie detection 
+    Memory Management
+        XXX
+    Multithreading
+
+S
+
+Other Wants
+    Level Editor
+
+
+
+
+
+
+3D Graphics
+	XXX
+Physics Engine
+	Voxel Based worlds
+Sound
+	Ideally would like to have sound be actual waves
+AI
+	Ai basics 
+Importance 
+If the Ai is not important then its cullable and not required to be saved when the player leaves the area, and can be regenerated if the player returns
+To the World
+				The ai who are need to keep the world stable
+To the Player
+The ai that would break immersion if missing when the player returns
+
+
+Networking
+	Since the game will be cpu heavy the plan is to have the player help with the processing. Obviously one can not trust the players, so each player is given a trust level that means that the longer that the player has gone without lying ( hacking/editing the returned values) the less duplicate servers need to be used to verify there results 
+Can connect headless servers as verified servers whose outputs are trusted without verification or used as lie detection 
+Memory Management
+	XXX
+Multithreading  
